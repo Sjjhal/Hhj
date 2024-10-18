@@ -1,0 +1,18 @@
+public class Task1 {
+    public static void main(String[] args) {
+        double a = 1.256;
+        double b = 13.5;
+        double c = 4;
+        int i = 3; // наприклад, i = 3 (кубічний корінь)
+
+        double numerator = Math.pow(b, (a + 1));
+        double denominator = Math.pow(Math.abs(b - c), 1.0 / i);
+        double firstPart = numerator / denominator;
+
+        double secondPart = (a + b / 2) / (2 * Math.abs(a + b));
+
+        double x = firstPart + secondPart;
+
+        System.out.println("Значення x: " + x);
+    }
+}
