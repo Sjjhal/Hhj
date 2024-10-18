@@ -1,0 +1,24 @@
+public class PiecewiseFunction {
+    public static void main(String[] args) {
+        double x = 5;  // Введіть значення x
+        double a = 2;  // Введіть значення a
+        double b = 1;  // Введіть значення b
+        double result = 0;
+
+        if (x >= 0 && x < 4) {
+            // f(x) = cos(x) для x ∈ [0, 4)
+            result = Math.cos(x);
+        } else if (x == 4) {
+            // f(x) = 3x^2 + b для x = 4
+            result = 3 * Math.pow(x, 2) + b;
+        } else if (x > 4 && x < 9) {
+            // f(x) = ln(ax + b) для x ∈ (4, 9)
+            result = Math.log(a * x + b);
+        } else {
+            System.out.println("Значення x не входить в допустимі інтервали [0, 9).");
+            return;
+        }
+
+        System.out.println("f(x) = " + result);
+    }
+}
