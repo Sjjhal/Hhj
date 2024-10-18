@@ -1,0 +1,10 @@
+public class Task2 {
+    public static void main(String[] args) {
+        double a = 1.256;
+
+        double exponent = -1 / Math.sin(a);
+        double y = Math.pow(a + 1, exponent);
+
+        System.out.println("Значення y: " + y);
+    }
+}
